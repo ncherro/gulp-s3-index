@@ -10,7 +10,7 @@ module.exports = function (options) {
 
     AWS.config.region = options.region;
     var s3 = new AWS.S3({
-	params: {
+      params: {
         Bucket: options.params.Bucket
       },
       accessKeyId: options.accessKeyId,
