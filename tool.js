@@ -10,11 +10,11 @@ module.exports = function (options) {
 
     AWS.config.region = options.region;
     var s3 = new AWS.S3({
-	params: {
-		Bucket: options.params.bucket
-	},
-        accessKeyId: options.accesKeyId,
-        secretAccessKey: options.secretAccesKeyId
+      params: {
+        Bucket: options.params.Bucket
+      },
+      accessKeyId: options.accessKeyId,
+      secretAccessKey: options.secretAccessKey
     });
 
     var updateWebsiteIndex = function (indexFile) {
